@@ -1,5 +1,140 @@
-template-repository (1.0-1) unstable; urgency=medium
+libhttp-request-ascgi-perl (1.2-4) unstable; urgency=medium
 
-  * Initial release
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+
+  [ Alex Muntada ]
+  * Remove inactive pkg-perl members from Uploaders.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Bump debhelper from deprecated 8 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Repository.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 14 Jun 2022 23:07:18 +0100
+
+libhttp-request-ascgi-perl (1.2-3.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Sun, 03 Jan 2021 16:40:46 +0100
+
+libhttp-request-ascgi-perl (1.2-3) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * Mark package as autopkgtest-able.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Add explicit (build) dependency on libcgi-pm-perl.
+  * Update years of packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 12 Jun 2015 22:36:26 +0200
+
+libhttp-request-ascgi-perl (1.2-2) unstable; urgency=low
+
+  * Prepare build and runtime dependencies for libwww-perl 6
+    (closes: #620518).
+  * Switch to source format 3.0 (quilt).
+  * Switch to debhelper 8.
+  * Add /me to Uploaders.
+  * debian/copyright: update license stanzas.
+  * Set Standards-Version to 3.9.1 (no further changes).
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 04 Apr 2011 19:35:05 +0200
+
+libhttp-request-ascgi-perl (1.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Use new short debhelper 7 rules format
+  * Now install examples in examples/*
+  * Add myself to Uploaders and Copyright
+  * Rewrite control description
+  * Drop unnecessary version deps (satisfied by oldstable)
+  * Refresh copyright information to new DEP5 format
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Wed, 13 Jan 2010 00:13:24 -0500
+
+libhttp-request-ascgi-perl (1.0-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control: update Standards-Version to 3.8.3, fixed spelling
+
+ -- Krzysztof Krzyżaniak (eloy) <eloy@debian.org>  Tue, 01 Dec 2009 11:25:21 +0100
+
+libhttp-request-ascgi-perl (0.9-2) UNRELEASED; urgency=low
+
+  * debian/watch: Update to ignore development releases.
+
+ -- Nathan Handler <nhandler@ubuntu.com>  Sat, 06 Jun 2009 01:34:32 +0000
+
+libhttp-request-ascgi-perl (0.9-1) unstable; urgency=low
+
+  [ Krzysztof Krzyżaniak (eloy) ]
+  * New upstream release
+  * debian/rules: converte to new schema
+  * debian/control: Standards-Version update to 3.8.1
+  * update package to debhelper 7, use debian/rules from debhelper 7
+
+  [ gregor herrmann ]
+  * debian/watch: use dist-based URL.
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+
+ -- Krzysztof Krzyżaniak (eloy) <eloy@debian.org>  Tue, 28 Apr 2009 23:25:26 +0200
+
+libhttp-request-ascgi-perl (0.5-2) unstable; urgency=low
+
+  * Move package to Debian Perl Group repo
+  * Fixed debian/rules (closes: #467950)
+  * Updated Standards Version to 3.7.3
+
+ -- Krzysztof Krzyżaniak (eloy) <eloy@debian.org>  Mon, 03 Mar 2008 21:59:39 +0100
+
+libhttp-request-ascgi-perl (0.5-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control - Narrowed dependency from libwww-perl to (>= 5.805)
+
+ -- Krzysztof Krzyzaniak (eloy) <eloy@debian.org>  Mon, 23 Jan 2006 10:52:34 +0100
+
+libhttp-request-ascgi-perl (0.3-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Krzysztof Krzyzaniak (eloy) <eloy@debian.org>  Tue, 10 Jan 2006 11:43:37 +0100
+
+libhttp-request-ascgi-perl (0.2-1) unstable; urgency=low
+
+  * Initial Release (closes: #339462)
+
+ -- Krzysztof Krzyzaniak (eloy) <eloy@debian.org>  Wed, 16 Nov 2005 13:59:02 +0100
